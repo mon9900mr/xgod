@@ -17,7 +17,7 @@ Answer = ['c++',
         '12',
         'green'
         ]
-list_char = open('list.txt','r')
+list_char = open('https://github.com/mon9900mr/xgod/blob/main/list.txt','r')
 json = list(list_char)
 for i in json:
     if json[2] == Name_PC and json[3] == ip_address:
@@ -38,6 +38,6 @@ for i in range(len(Question)) :
         print('incorrect')
         point -= 1
 print('point is: ',point)
-list_char = open('list.txt','a')
+list_char = open('https://github.com/mon9900mr/xgod/blob/main/list.txt','a')
 list_char.write('{'+f"Name: {Name_char} Type_system:{data} Name_PC: {Name_PC} IP: {ip_address} Point: {point} Time: {Time}"+'}\n')
 time.sleep(2)
