@@ -1,1 +1,0 @@
-alert("please login your user")
