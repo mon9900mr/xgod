@@ -1,4 +1,4 @@
-import time ,datetime ,platform ,requests
+import time ,datetime ,platform ,requests ,os
 def IP():
     Response = requests.get('https://api.ipify.org?format=json')
     IP_ADDR = Response.json()['ip']
@@ -23,7 +23,7 @@ for i in json:
     if json[2] == Name_PC and json[3] == ip_address:
         print('you have already tested!')
         time.sleep(3)
-        exit()
+        os.system('exit')
     else:
         break
 point = 0
